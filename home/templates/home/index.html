@@ -10,6 +10,11 @@
 
 	<title>E-Summit 2021</title>
 
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
 
 	<link rel="icon" href="{%static 'home/img/favicon.ico' %}">
 
@@ -439,11 +444,7 @@
 		}
 	</style>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+	
 
 	<script type="text/javascript">
 		window.onscroll = function (ev) {
@@ -499,9 +500,10 @@
 							<ul id="nav">
 								<li><a href="#home">Home</a></li>
 								<li><a href="#about">About Us</a></li>
-								<li><a href="#speakers">Speakers</a></li>
-								<li><a href="#schedule">Schedule</a></li>
+								<!-- <li><a href="#speakers">Speakers</a></li> -->
+								<!-- <li><a href="#schedule">Schedule</a></li> -->
 								<li><a href="#events">Events</a></li>
+								<li><a href="#register">Register</a></li>
 								<li><a href="#faq">FAQs</a></li>
 								<li><a href="#contact">Contact Us</a></li>
 							</ul>
@@ -517,7 +519,7 @@
 		{% if messages %}
 		{% for message in messages %}
 		<ul class="messages"
-			style="background: #3787a6; width: 100%; margin-top: 20vh ; color: rgb(255,255,255); text-align: center; margin: 0px; padding: 10px;">
+			style="background: #FCFF00; width: 100%; margin-top: 20vh ; color: rgb(255,255,255); text-align: center; margin: 0px; padding: 10px;">
 			<h1 style="font-weight: 600; font-size: 25px; margin: 0px;">{{ message }}</h1>
 		</ul>
 		{% endfor %}
@@ -634,7 +636,7 @@
 	</section>
 
 
-	<section id="schedule" class="our-schedule-area section-padding-100">
+	<!-- <section id="schedule" class="our-schedule-area section-padding-100">
 		<div class="container">
 			<div class="row">
 
@@ -685,7 +687,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/10.jpg' %}" alt="">
+													<img src="img/bg-img/10.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -709,7 +711,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/11.jpg' %}" alt="">
+													<img src="img/bg-img/11.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -733,7 +735,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/12.jpg' %}" alt="">
+													<img src="img/bg-img/12.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -757,7 +759,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/13.jpg' %}" alt="">
+													<img src="img/bg-img/13.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -797,7 +799,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/11.jpg' %}" alt="">
+													<img src="img/bg-img/11.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -821,7 +823,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/12.jpg' %}" alt="">
+													<img src="img/bg-img/12.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -845,7 +847,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/13.jpg' %}" alt="">
+													<img src="img/bg-img/13.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -885,7 +887,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/10.jpg' %}" alt="">
+													<img src="img/bg-img/10.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -909,7 +911,7 @@
 											<div class="single-schedule-tumb-info d-flex align-items-center">
 
 												<div class="single-schedule-tumb">
-													<img src="{% static 'home/img/bg-img/13.jpg' %}" alt="">
+													<img src="img/bg-img/13.jpg" alt="">
 												</div>
 
 												<div class="single-schedule-info">
@@ -941,7 +943,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section id="events" class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax"
 		style="background-image: url({% static 'home/img/bg-img/14.jpg' %})">
@@ -1025,6 +1027,114 @@
 
 
 
+	<section id="register" class="contact-our-area section-padding-100-0">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+
+						<h4>Registration</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-between" >
+
+				<center>
+				<div class="col-12 col-sm-8">
+
+					<div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+						<div class="contact_form">
+
+							<form method="post" id="main_contact_form">
+								<div class="contact_input_area">
+									<div id="success_fail_info"></div>
+
+									{% csrf_token %}
+
+
+									<div class="row">
+
+										<div class="col-12 col-lg-6">
+											<div class="form-group">
+
+												<input class="form-control mb-30" type="text" name="name"
+													maxlength="100" required="" id="id_name" placeholder="Your Name">
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-6">
+											<div class="form-group">
+												<input class="form-control mb-30" type="tel" name="contact_no"
+													maxlength="128" required="" id="id_contact_no"
+													placeholder="Conatct No.">
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-6">
+											<div class="form-group">
+												<input class="form-control mb-30" type="email" name="email"
+													maxlength="254" required="" id="id_email" placeholder="E-Mail" style="text-transform:none;">
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-6">
+											<div class="form-group">
+												<select class="form-control mb-30" name="thapar_student" required=""
+													id="id_thapar_student">
+													<option value="" selected="">Are you a Thapar Student?</option>
+
+													<option value="True">Yes</option>
+
+													<option value="False">No</option>
+
+												</select>
+											</div>
+										</div>
+										<div class="col-12" style="text-align: left; ">
+											<p style="color: #9293bc; font-size:18px">Events you are interested in: </p>
+										</div>
+										<div class="col-12 col-lg-4">
+											<div class="form-group">
+												<label style="color: white; font-size: 18px; font-size: 18px;" for="id_unwind_interested">Unwind:</label>
+												<input type="checkbox" name="unwind_interested"
+													id="id_unwind_interested" checked="">
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-4">
+											<div class="form-group">
+												<label style="color: white; font-size: 18px;" for="id_unwind_interested">Elevate:</label>
+												<input type="checkbox" name="elevate_interested"
+													id="id_elevate_interested" checked="">
+											</div>
+										</div>
+
+										<div class="col-12 col-lg-4">
+											<div class="form-group">
+												<label style="color: white; font-size: 18px;"
+													for="id_unwind_interested">Bootcamp:</label>
+												<input type="checkbox" name="bootcamp_interested"
+													id="id_bootcamp_interested" checked="">
+											</div>
+										</div>
+										<br>
+										<div class="col-12">
+											<button type="submit" class="confer-btn">Register <i
+													class="zmdi zmdi-long-arrow-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</center>
+			</div>
+		</div>
+	</section>
+
+
 	<section id="gallery">
 		<div class="container-fluid gallery-container our-speaker-area bg-img bg-gradient-overlay section-padding-100-60"
 			style="background-image: url(static/home/img/bg-img/3.jpg); background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);">
@@ -1083,7 +1193,7 @@
 		baguetteBox.run('.tz-gallery');
 	</script>
 
-	<section class="our-sponsor-client-area section-padding-100">
+	<!-- <section class="our-sponsor-client-area section-padding-100">
 		<div class="container">
 			<div class="row">
 
@@ -1133,372 +1243,206 @@
 					</div>
 				</div>
 
-				<!--<div class="col-12">
-	<div class="our-client-area mt-100 wow fadeInUp" data-wow-delay="300ms">
-	
-	<div class="client-area owl-carousel">
-	
-	<div class="single-client-content">
-	
-	<div class="single-client-text">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-	
-	 <div class="single-client-thumb-info d-flex align-items-center">
-	
-	<div class="single-client-thumb">
-	<img src="img/bg-img/15.jpg" alt="">
-	</div>
-	
-	<div class="client-info">
-	<h6>Maria Hernandez</h6>
-	<p>UX Manager</p>
-	</div>
-	</div>
-	</div>
-	
-	<div class="client-icon">
-	<i class="zmdi zmdi-quote"></i>
-	</div>
-	</div>
-	
-	<div class="single-client-content">
-	
-	<div class="single-client-text">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-	
-	<div class="single-client-thumb-info d-flex align-items-center">
-	
-	<div class="single-client-thumb">
-	<img src="img/bg-img/16.jpg" alt="">
-	</div>
-	
-	<div class="client-info">
-	<h6>Jacqueline Myers</h6>
-	<p>UX Manager</p>
-	</div>
-	</div>
-	</div>
-	
-	<div class="client-icon">
-	<i class="zmdi zmdi-quote"></i>
-	</div>
-	</div>
-	
-	<div class="single-client-content">
-	
-	<div class="single-client-text">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-	
-	<div class="single-client-thumb-info d-flex align-items-center">
-	
-	<div class="single-client-thumb">
-	<img src="img/bg-img/15.jpg" alt="">
-	</div>
-	
-	<div class="client-info">
-	<h6>Maria Hernandez</h6>
-	<p>UX Manager</p>
-	</div>
-	</div>
-	</div>
-	
-	<div class="client-icon">
-	<i class="zmdi zmdi-quote"></i>
-	</div>
-	 </div>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
--->
-	</section>
+				
+	</section> -->
 
-	<section class="contact-our-area section-padding-100-0">
+	
+
+	<section id="faq" class="faq-section">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="display:flex; align-items:center; justify-content:center; padding-bottom: 80px; ">
+				<!-- ***** FAQ Start ***** -->
+				<div class="col-md-10">
 
-				<div class="col-12">
-					<div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-
-						<h4>Registration</h4>
+					<div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+						<h4>FAQ's</h4>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-between">
-
-				<div class="col-12 col-sm-8">
-
-					<div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
-						<div class="contact_form">
-
-							<form method="post" id="main_contact_form">
-								<div class="contact_input_area">
-									<div id="success_fail_info"></div>
-
-									{% csrf_token %}
-
-
-									<div class="row">
-
-										<div class="col-12 col-lg-6">
-											<div class="form-group">
-
-												<input class="form-control mb-30" type="text" name="name"
-													maxlength="100" required="" id="id_name" placeholder="Your Name">
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-6">
-											<div class="form-group">
-												<input class="form-control mb-30" type="tel" name="contact_no"
-													maxlength="128" required="" id="id_contact_no"
-													placeholder="Conatct No.">
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-6">
-											<div class="form-group">
-												<input class="form-control mb-30" type="email" name="email"
-													maxlength="254" required="" id="id_email" placeholder="E-Mail">
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-6">
-											<div class="form-group">
-												<select class="form-control mb-30" name="thapar_student" required=""
-													id="id_thapar_student">
-													<option value="" selected="">Are you a Thapar Student?</option>
-
-													<option value="True">Yes</option>
-
-													<option value="False">No</option>
-
-												</select>
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-4">
-											<div class="form-group">
-												<label style="color: white; font-size: 18px; font-size: 18px;" for="id_unwind_interested">Unwind:</label>
-												<input type="checkbox" name="unwind_interested"
-													id="id_unwind_interested" checked="">
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-4">
-											<div class="form-group">
-												<label style="color: white; font-size: 18px;" for="id_unwind_interested">Elevate:</label>
-												<input type="checkbox" name="elevate_interested"
-													id="id_elevate_interested" checked="">
-											</div>
-										</div>
-
-										<div class="col-12 col-lg-4">
-											<div class="form-group">
-												<label style="color: white; font-size: 18px;"
-													for="id_unwind_interested">Bootcamp:</label>
-												<input type="checkbox" name="bootcamp_interested"
-													id="id_bootcamp_interested" checked="">
-											</div>
-										</div>
-										<br>
-										<div class="col-12">
-											<button type="submit" class="confer-btn">Register <i
-													class="zmdi zmdi-long-arrow-right"></i></button>
-										</div>
+				<div class="col-md-10 ">
+					<div class="faq" id="accordion">
+						<div class="card">
+							<div class="card-header" id="faqHeading-1">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1"
+										data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+										<span class="badge">1</span>Is there any Entry fee for the Summit?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p>No, there is no entry fees for the event. </p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-2">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+										<span class="badge">2</span>How can we register for the Summit?
+									</h5>
+								</div>
+								<div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
+									data-parent="#accordion">
+									<div class="card-body">
+										<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+											in a piece of classical Latin literature from 45 BC, making it over 2000 years
+											old.</p>
 									</div>
 								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-10 ">
-				<div class="faq" id="accordion">
-					<div class="card">
-						<div class="card-header" id="faqHeading-1">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1"
-									data-aria-expanded="true" data-aria-controls="faqCollapse-1">
-									<span class="badge">1</span>Is there any Entry fee for the Summit?
-								</h5>
 							</div>
 						</div>
-						<div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p>No, there is no entry fees for the event. </p>
+						<div class="card">
+							<div class="card-header" id="faqHeading-3">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+										<span class="badge">3</span>Can students who are not from thapar participate?
+									</h5>
+								</div>
+								<div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
+									data-parent="#accordion">
+									<div class="card-body">
+										<p>It is a long established fact that a reader will be distracted by the readable
+											content of a page when looking at its layout. The point of using Lorem Ipsum is
+											that it has a more-or-less normal distribution of letters, as opposed to using
+											'Content here, content here.</p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-2">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-									<span class="badge">2</span>How can we register for the Summit?
-								</h5>
+						<div class="card">
+							<div class="card-header" id="faqHeading-4">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+										<span class="badge">4</span>Is Thapar organising this event or some company from outside?
+									</h5>
+								</div>
 							</div>
-							<div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
+							<div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
 								data-parent="#accordion">
 								<div class="card-body">
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-										in a piece of classical Latin literature from 45 BC, making it over 2000 years
-										old.</p>
+									<p>The E-Cell of our college EDC, TIET is organizing this event.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-5">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+										<span class="badge">5</span>Can 1st years participate in internship fair?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p>Yes, the internships in Internship Fair are open for both First and Second year students.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-6">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+										<span class="badge">6</span>What will be the duration of internships?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p>This differs from company to company and profile being offered.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-7">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+										<span class="badge">7</span>Will the internships be in online or offline?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-8">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-8">
+										<span class="badge">8</span>What is the level of pre-requisite knowledge required for internships? 
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-9">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-9">
+										<span class="badge">9</span>Are all the internships coding related?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-10">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+										<span class="badge">10</span>Will the internships be paid?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="faqHeading-11">
+								<div class="mb-0">
+									<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-11"
+										data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+										<span class="badge">11</span>What will the platform for elevate?
+									</h5>
+								</div>
+							</div>
+							<div id="faqCollapse-11" class="collapse" aria-labelledby="faqHeading-11"
+								data-parent="#accordion">
+								<div class="card-body">
+									<p>The platforms used would be a portal along with Discord.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-3">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-									<span class="badge">3</span>Can students who are not from thapar participate?
-								</h5>
-							</div>
-							<div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
-								data-parent="#accordion">
-								<div class="card-body">
-									<p>It is a long established fact that a reader will be distracted by the readable
-										content of a page when looking at its layout. The point of using Lorem Ipsum is
-										that it has a more-or-less normal distribution of letters, as opposed to using
-										'Content here, content here.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-4">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-									<span class="badge">4</span>Is Thapar organising this event or some company from outside?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p>The E-Cell of our college EDC, TIET is organizing this event.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-5">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-									<span class="badge">5</span>Can 1st years participate in internship fair?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p>Yes, the internships in Internship Fair are open for both First and Second year students.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-6">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-6">
-									<span class="badge">6</span>What will be the duration of internships?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p>This differs from company to company and profile being offered.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-7">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-7">
-									<span class="badge">7</span>Will the internships be in online or offline?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-8">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-8">
-									<span class="badge">8</span>What is the level of pre-requisite knowledge required for internships? 
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-9">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-9">
-									<span class="badge">9</span>Are all the internships coding related?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-10">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-									<span class="badge">10</span>Will the internships be paid?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="faqHeading-11">
-							<div class="mb-0">
-								<h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-11"
-									data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-									<span class="badge">11</span>What will the platform for elevate?
-								</h5>
-							</div>
-						</div>
-						<div id="faqCollapse-11" class="collapse" aria-labelledby="faqHeading-11"
-							data-parent="#accordion">
-							<div class="card-body">
-								<p>The platforms used would be a portal along with Discord.</p>
-							</div>
-						</div>
-					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
