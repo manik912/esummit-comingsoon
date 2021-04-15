@@ -13,6 +13,7 @@ class Register(models.Model):
     unwind_interested   = models.BooleanField(default=True)
     elevate_interested  = models.BooleanField(default=True)
     bootcamp_interested = models.BooleanField(default=True)
+    if_interested       = models.BooleanField(default=True)
 	
     def __str__(self):
        return self.name
