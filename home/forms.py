@@ -1,6 +1,11 @@
 from .models import *
 from django import forms
 
+class EmailForm(forms.ModelForm):
+	class Meta():
+		model = Register
+		fields = ['email']
+
 class RegisterForm(forms.ModelForm):
 	class Meta():
 		model = Register
