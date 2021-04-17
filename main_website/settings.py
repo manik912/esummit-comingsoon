@@ -78,7 +78,14 @@ WSGI_APPLICATION = 'main_website.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    
+    'default': {
+        'ENGINE': "django.db.backends.postgresql_psycopg2",
+        'NAME': "dad9emhdivu93p",
+        'USER': "nztzelbeuttotr",
+        'PASSWORD': "6dcac2da8a51b016a3e73b4bf065845a9e71cc101f674519c428ab7917c7102c",
+        'HOST': "ec2-54-166-242-77.compute-1.amazonaws.com",
+        'PORT': '5432',
+    }
 }
 
 
@@ -117,7 +124,6 @@ USE_TZ = True
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = "IN"
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Static files (CSS, JavaScript, Images)
